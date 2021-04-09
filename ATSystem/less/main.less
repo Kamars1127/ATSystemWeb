@@ -1,0 +1,587 @@
+@import "basic.less";
+@import "functionIntro.less";
+@import "download.less";
+
+* {
+    font-family: "Noto Sans TC";
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 15px;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+/*------ Color
+*-『.bg-darkPurple』: 暗紫色-背景
+*-『.bg-blue』: 藍色-背景
+*-『.bg-purple』: 紫色-背景
+*-『.font-white』: 白色 - 文字
+*---------------------------------------*/
+
+.bg-darkPurple {
+    background-color: @bg-purple-dark;
+}
+
+.bg-blue {
+    background-color: @bg-blue;
+}
+
+.bg-purple {
+    background: @bg-purple;
+}
+
+.font-white {
+    color: white;
+}
+
+.font-black {
+    color: #323232;
+}
+
+.font-importent {
+    color: @importent-color;
+}
+
+
+.icon {
+    margin-right: 10px;
+}
+
+/*------ Hamburger Menu
+*-『#menu-toggle』
+*---------------------------------------*/
+#menu-toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+    span {
+        display: block;
+        border-radius: 3px;
+        background: white;
+    }
+
+    #hamburger {
+
+        width: 100%;
+        height: 100%;
+
+        span {
+
+            width: 30px;
+            height: 3px;
+            margin: 6px 0;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+/*------ Header
+*-『#header』
+*---------------------------------------*/
+#header {
+    #hamburger-menu {
+        margin-top: 11px;
+
+        background-color: #FFC952;
+
+        ul {
+            margin: 0;
+        }
+
+        li.nav-item {
+            a.nav-link {
+                color: @text-purple-dark;
+                text-align: center;
+            }
+
+            &:hover {
+                background-color: @importent-color;
+
+                .nav-link {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+/*------ Content
+*-『#banne』: Banner
+*-『#content .feature』
+*--------------------------*/
+
+#banner,
+#content .feature {
+    padding: 30px 16px;
+}
+
+#banner {
+
+    li {
+        display: flex;
+        align-items: center;
+        padding-top: 24px;
+
+        .icon {
+            font-size: 16px;
+        }
+
+        .note {
+            font-size: 16px;
+        }
+    }
+
+    .download-area {
+        margin-top: 24px;
+        margin-left: auto;
+        border-radius: 75px;
+        padding: 8px;
+        width: 190px;
+        background: linear-gradient(110deg, #66A6FF, #89F7FE);
+        text-align: center;
+
+        a.download {
+            text-decoration: none;
+            color: @text-purple-dark;
+            line-height: 1;
+
+            span {
+                font-size: 12px;
+            }
+        }
+
+        &:hover {
+            background: linear-gradient(110deg, #FF6261, #FEC1C1);
+
+            a.download {
+                color: white;
+            }
+        }
+    }
+}
+
+
+#content .feature {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .text-area {
+        margin-top: 30px;
+    }
+
+    ul {
+        li {
+            display: flex;
+            align-items: baseline;
+
+            .icon {
+                font-size: 13px;
+            }
+        }
+
+        &.note-area li {
+            margin-top: 15px;
+            margin-left: 6px;
+            font-size: 13px;
+        }
+
+        &.point-area {
+            margin-top: 3px;
+            margin-left: 32px;
+
+            li {
+                padding-bottom: 5px;
+                font-size: 12px;
+
+                &.importent-point {
+
+                    span {
+                        margin-left: 5px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*------ Footer
+*-『#footer』
+*--------------------------*/
+#footer {
+
+    padding: 20px 16px 15px;
+
+    text-align: center;
+    color: @text;
+    font-size: 12px;
+
+    .gitHub {
+        text-decoration: none;
+        color: @text;
+        font-size: 20px;
+
+        .icon {
+            margin: 0;
+        }
+    }
+}
+
+/*------ 返回頂端
+*-『#go-top』
+*--------------------------*/
+#go-top {
+    display: none;
+
+    &.visible {
+        display: block;
+        position: fixed;
+        right: 0;
+        bottom: 70px;
+        border-radius: 5px 0 0 5px;
+        background: #FFC952;
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    a {
+        text-decoration: none;
+        color: @text-purple-dark;
+    }
+}
+
+/*------ 各螢幕尺吋對應的畫面
+*-『min-width: 576px』: 螢幕尺吋>575時
+*-『min-width: 768px』: 螢幕尺吋>767時
+*-『min-width: 992px』: 螢幕尺吋>991時
+*-『min-width: 1200px』: 螢幕尺吋>1999時
+*----------------------------------------*/
+
+
+@media(min-width: 576px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    /*--- Hamburger Menu ---*/
+    #menu-toggle #hamburger span {
+        height: 4px;
+    }
+
+    /*--- Header ---*/
+    #header #hamburger-menu {
+        li.nav-item {
+            font-size: 20px;
+
+            a.nav-link {
+                padding: 10px 0;
+            }
+        }
+    }
+
+    /*--- Content
+    *-『#banne』
+    *-『#content .feature』
+    *-------------------------*/
+    #banner {
+
+        li {
+            .icon {
+                font-size: 20px;
+            }
+
+            .note {
+                font-size: 20px;
+            }
+        }
+
+        .download-area {
+            a.download {
+                font-size: 24px;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    #content .feature {
+        ul {
+            li .icon {
+                font-size: 16px;
+            }
+
+            &.note-area li {
+                font-size: 16px;
+            }
+
+            &.point-area li {
+                font-size: 14px;
+
+                &.importent-point span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    /*--- Footer
+    *-『#footer』
+    *----------------------*/
+    #footer {
+        font-size: 14px;
+
+        .gitHub {
+            font-size: 24px;
+        }
+    }
+
+    /*--- 返回頂端
+    *-『#go-top』
+    *--------------------------*/
+    #go-top.visible {
+        bottom: 75px;
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 768px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    /*--- Content
+    *-『#banne』
+    *-『#content .feature』
+    *-------------------------*/
+    #banner .download-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        width: 288px;
+
+        a.download {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+
+            p.text {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    #content .feature ul {
+        li .icon {
+            font-size: 18px;
+        }
+
+        &.note-area li {
+            font-size: 18px;
+        }
+
+        &.point-area li {
+            font-size: 16px;
+
+            &.importent-point span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    /*--- Footer
+    *-『#footer』
+    *----------------------*/
+    #footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+
+        .gitHub {
+            font-size: 24px;
+        }
+    }
+}
+
+@media(min-width: 992px) {
+
+    /*--- Header
+    *-『#header nav』
+    *---------------*/
+    #header nav {
+        flex-direction: column;
+
+        a.navbar-brand {
+            align-self: flex-start;
+        }
+
+        #hamburger-menu {
+            align-self: flex-end;
+            border-radius: 30px 0 0 30px;
+
+            li.nav-item {
+                padding: 0 15px;
+
+                &:hover {
+                    border-radius: 30px 0 0 30px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    .icon {
+        margin-right: 15px;
+    }
+
+    /*--- Header
+    *-『#header nav』
+    *---------------*/
+    #header nav {
+        padding: 10px 30px 60px;
+    }
+
+
+    /*--- Content
+    *-『#banne』
+    *-『#content .feature』
+    *-------------------------*/
+    #banner,
+    #content .feature {
+        padding: 40px 30px;
+    }
+
+    #banner {
+        li {
+            padding-top: 48px;
+
+            .icon,
+            .note {
+                font-size: 30px;
+            }
+        }
+
+        .download-area {
+            margin-top: 48px;
+            width: 540px;
+            height: 118px;
+
+            a.download {
+
+                p.text {
+                    font-size: 48px;
+                }
+
+                span {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    #content .feature {
+        padding-top: 60px;
+
+        .text-area {
+            margin: 0;
+        }
+
+        ul {
+            li .icon {
+                font-size: 24px;
+            }
+
+            &.note-area li {
+                margin-top: 30px;
+                font-size: 24px;
+            }
+
+            &.point-area {
+                margin-top: 10px;
+
+                li {
+                    padding-bottom: 15px;
+                    font-size: 18px;
+
+                    &.import-point {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        &.use-ATSystem .row {
+            flex-direction: row-reverse;
+        }
+    }
+
+
+    /*--- Footer
+    *-『#footer』
+    *----------------------*/
+    #footer {
+        padding: 27px 30px 22px;
+        font-size: 18px;
+
+        .gitHub {
+            font-size: 45px;
+        }
+    }
+
+
+    /*--- 返回頂端
+    *-『#go-top』
+    *--------------------------*/
+    #go-top.visible {
+        bottom: 100px;
+        font-size: 24px;
+    }
+}

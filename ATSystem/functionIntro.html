@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATSystem-功能介紹</title>
+
+    <link rel="icon" type="image/ico" sizes="32x32" href="img//favicon-32x32.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/action.js"></script>
+</head>
+
+<body id="function-intro" class="bg-purple">
+    <!-- Header -->
+    <div id="header" class="bg-darkPurple">
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html"><img src="img/LOGO.png" alt="logo"></a>
+
+            <!--Hamburger Menu-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hamburger-menu">
+                <!--Hamburger Menu Icon-->
+                <div id="menu-toggle" class="d-flex align-items-start">
+                    <div id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="hamburger-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="" data-toggle="collapse" data-target="#function-menu">功能選單</a>
+                        <div class="collapse" id="function-menu">
+                            <ul class="function nav nav-pills">
+                                <li class="item">
+                                    <a href="#fun-files" data-toggle="pill"><i class="fas fa-home icon"></i>檔案</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#fun-asking-tables" data-toggle="pill"><i
+                                            class="fas fa-paste icon"></i>問事表</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#fun-contact-infos" data-toggle="pill"><i class="fas fa-address-book icon"></i>聯絡資訊</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#fun-histories" data-toggle="pill"><i class="fas fa-history icon"></i>問事紀錄</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#fun-abouts" data-toggle="pill"><i class="fas fa-info-circle icon"></i>關於</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">開發日誌</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="download.html">檔案下載</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="content">
+        <!-- Function Menu -->
+        <div class="function-tab nav nav-pills">
+            <a href="#fun-files" data-toggle="pill"><i class="fas fa-home icon"></i>檔案</a>
+            <a href="#fun-asking-tables" data-toggle="pill"><i class="fas fa-paste icon"></i>問事表</a>
+            <a href="#fun-contact-infos" data-toggle="pill"><i class="fas fa-address-book icon"></i>聯絡資訊</a>
+            <a href="#fun-histories" data-toggle="pill"><i class="fas fa-history icon"></i>問事紀錄</a>
+            <a href="#fun-abouts" data-toggle="pill"><i class="fas fa-info-circle icon"></i>關於</a>
+        </div>
+
+        <!-- 內容 -->
+        <div class="tab-content" id="pills-tabContent">
+            <!-- Files -->
+            <div class="tab-pane fade show active" id="fun-files">
+                <!-- 主圖 -->
+                <div class="main-picture">
+                    <div class="container"><img src="img/files/main.png" alt="picture"></div>
+                </div>
+                <!-- 新增問事表 -->
+                <div class="section">
+                    <h3 class="section-title font-white"><i class="fas fa-book-open icon font-white"></i>新增問事表</h3>
+
+                    <div class="row section-content">
+                        <div class="col-sm-6 picture"><img src="img/files/newAskingTables.PNG" alt="newAskingTables"
+                                style="max-width:416px;">
+                        </div>
+                        <div class="col-sm-6 text-area">
+                            <div class="note-area">
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">功能 : 用來建立問事表</p>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">日期與地點 : 組合成問事表的名稱</p>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-importent">問事表名稱不能重複，被建立</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 瀏覽問事表 -->
+                <div class="section">
+                    <h3 class="title font-white"><i class="fas fa-book-open icon font-white"></i>瀏覽問事表</h3>
+
+                    <div class="row section-content">
+                        <div class="col-sm-6 picture"><img src="img/files/browseAskingTables.PNG" alt="browseAskingTables"
+                                style="max-width:519px;">
+                        </div>
+                        <div class="col-sm-6 text-area">
+                            <div class="note-area">
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">功能 : 瀏覽已儲存的問事表</p>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">查詢 & 輸入框 : </p>
+                                </div>
+                                <div class="point-area">
+                                    <div class="point">
+                                        <p class="font-white">1.&nbsp;可以依地點或日期查詢問事表。</p>
+                                    </div>
+                                    <div class="point">
+                                        <p class="font-white">2.&nbsp;日期只能用純數字。<span class="font-importent">(2021年3月29日 就輸入 20210329)</span></p>
+                                        
+                                    </div>
+                                    <div class="ponit">
+                                        <p class="font-white">3.&nbsp;只能輸入文字(英文、中文)和數字。</p>
+                                    </div>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">顯示全部 : 顯示全部問事表</p>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">點選表格列會顯示工具視窗</p>
+                                </div>
+                                <div class="point-area">
+                                    <div class="point">
+                                        <p class="font-white">1.&nbsp;對選取得的資料表作開啟、刪除、匯出PDF。</p>
+                                    </div>
+                                    <div class="point">
+                                        <p class="font-white">2.&nbsp;開啟 : 在問事表功能選單中開啟。<span class="font-importent">&nbsp;(2021年3月29日 就輸入 20210329)</span></p>
+                                    </div>
+                                    <div class="point">
+                                        <p class="font-white">3.&nbsp;匯出PDF : 在電腦上儲存PDF檔。</p>
+                                    </div>
+                                    <div class="point">
+                                        <p class="font-white">4.&nbsp;刪除 : 把整個問事表刪除，包含裏頭的問事內容<span class="font-importent">(請三思)</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 新增問事地點 -->
+                <div class="section">
+                    <h3 class="title font-white"><i class="fas fa-book-open icon font-white"></i>新增問事地點</h3>
+
+                    <div class="row section-content">
+                        <div class="col-sm-6 picture"><img src="img/files/newAskingPlace.PNG" alt="newAskingPlace"
+                                style="max-width:416px;">
+                        </div>
+                        <div class="col-sm-6 text-area">
+                            <div class="note-area">
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">功能 : 新增問事地點</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 編輯問事地點 -->
+                <div class="section">
+                    <h3 class="title font-white"><i class="fas fa-book-open icon font-white"></i>編輯問事地點</h3>
+
+                    <div class="row section-content">
+                        <div class="col-sm-6 picture"><img src="img/files/editAskingPlace.PNG" alt="editAskingPlace"
+                                style="max-width:260px;">
+                        </div>
+                        <div class="col-sm-6 text-area">
+                            <div class="note-area">
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">功能 : 對存在的問事地點做修改或刪除</p>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">查詢 & 輸入框 :</p>
+                                </div>
+                                <div class="point-area">
+                                    <div class="point">
+                                        <p class="font-white">1.&nbsp;查詢已存在的地點。</p>
+                                    </div>
+                                    <div class="point">
+                                        <p class="font-white">2.&nbsp;只能輸入文字或數字。</p>
+                                    </div>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">全部 : 顯示全部地點。</p>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">修改 : 修改地點名稱。</p>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">刪除 : 刪除該地點。&nbsp;<span class="font-importent">(如果該地點被用來建立問事表則無法刪除)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ASkingTables -->
+            <div class="tab-pane fade" id="fun-asking-tables">
+                <!-- 主圖 -->
+                <div class="main-picture">
+                    <div class="container"><img src="img/askingTables/main.PNG" alt="picture"></div>
+                </div>
+
+                <!-- 報名 -->
+                <div class="section">
+                    <h3 class="section-title font-white"><i class="fas fa-book-open icon font-white"></i>報名</h3>
+
+                    <div class="row section-content">
+                        <div class="col-sm-6 picture"><img src="img/askingTables/signUp.png" alt="signUp"
+                                style="max-width:505px;">
+                        </div>
+                        <div class="col-sm-6 text-area">
+                            <div class="note-area">
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">功能 : 建立報名資訊或聯絡資訊(新人)</p>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">新人 :</p>
+                                </div>
+                                <div class="point-area">
+                                    <div class="point">
+                                        <p class="font-white">1.&nbsp;姓名和居住地不能空白。</p>
+                                    </div>
+                                    <div class="point">
+                                        <p class="font-white">2.&nbsp;建立報名資訊同時，也會建立聯絡資訊。<span class="font-importent">(不必再去聯絡資訊功能選單新增)</span></p>
+                                    </div>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">舊人 :</p>
+                                </div>
+                                <div class="point-area">
+                                    <div class="point">
+                                        <p class="font-white">1.&nbsp;輸入姓名後，可以在表格中選取正確的問事人。</p>
+                                    </div>
+                                    <div class="point">
+                                        <p class="font-white">2.&nbsp;不用輸入完整姓名，只要輸入關鍵字就可以在表格中選取正確問事人。</p>
+                                    </div>
+                                    <div class="point">
+                                        <p class="font-white">3.&nbsp;同一個人，不能重複報名。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 報名列區 -->
+                <div class="section">
+                    <h3 class="section-title font-white"><i class="fas fa-book-open icon font-white"></i>報名列區</h3>
+
+                    <div class="row section-content">
+                        <div class="col-sm-6 picture"><img src="img/askingTables/signUpArea.png" alt="signUpArea"
+                                style="max-width:517px;">
+                        </div>
+                        <div class="col-sm-6 text-area">
+                            <div class="note-area">
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">功能 : 查看報名資訊，刪除報名，新增問事內容</p>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">檢視 : 查看報名資訊</p>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">問事 :</p>
+                                </div>
+                                <div class="point-area">
+                                    <div class="point">
+                                        <p class="font-white">1.&nbsp;新增問事內容。</p>
+                                    </div>
+                                    <div class="point">
+                                        <p class="font-white">2.&nbsp;聯絡資訊 : 查看問事人的聯絡資訊。</p>
+                                    </div>
+                                    <div class="point">
+                                        <p class="font-white">3.&nbsp;歷史紀錄 : 問事人過往問事資料。</p>
+                                    </div>
+                                    <div class="point">
+                                        <p class="font-white">4.&nbsp;備註 : 報名時的備註內容，這邊可以更改。</p>
+                                    </div>
+                                    <div class="point">
+                                        <p class="font-white">5.&nbsp;新增後，會直接存到資料庫。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 問事區 -->
+                <div class="section">
+                    <h3 class="section-title font-white"><i class="fas fa-book-open icon font-white"></i>問事區</h3>
+
+                    <div class="row section-content">
+                        <div class="col-sm-6 picture"><img src="img/askingTables/askingArea.PNG" alt="askingArea"
+                                style="max-width:564px;">
+                        </div>
+                        <div class="col-sm-6 text-area">
+                            <div class="note-area">
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">功能 : 編輯問事內容，或刪除問事內容</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ContactInfos -->
+            <div class="tab-pane fade" id="fun-contact-infos">
+                <!-- 主圖 -->
+                <div class="main-picture">
+                   <div class="container"><img src="img/contactInfos/main.PNG" alt="picture"></div>
+               </div>
+
+                <!-- 新增聯絡資訊 -->
+                <div class="section">
+                   <h3 class="section-title font-white"><i class="fas fa-book-open icon font-white"></i>新增聯絡資訊</h3>
+
+                   <div class="row section-content">
+                       <div class="col-sm-6 picture"><img src="img/contactInfos/addContactInfo.PNG" alt="addContactInfo"
+                               style="max-width:350px;">
+                       </div>
+                       <div class="col-sm-6 text-area">
+                           <div class="note-area">
+                               <div class="note">
+                                   <i class="fas fa-feather-alt icon font-white"></i>
+                                   <p class="font-white">功能 : 建立聯絡資訊</p>
+                               </div>
+                               <div class="note">
+                                   <i class="fas fa-feather-alt icon font-importent"></i>
+                                   <p class="font-importent">注意 : 姓名和居住地不能空白</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <!-- 其他 -->
+               <div class="section">
+                <h3 class="section-title font-white"><i class="fas fa-book-open icon font-white"></i>其他</h3>
+
+                <div class="row section-content">
+                    <div class="col-sm-6 picture"><img src="img/contactInfos/others.PNG" alt="others"
+                            style="max-width:558px;">
+                    </div>
+                   
+                    <div class="col-sm-6 text-area">
+                        <div class="note-area">
+                            <div class="note">
+                                <i class="fas fa-feather-alt icon font-white"></i>
+                                <p class="font-white">查詢 : 可以輸入姓名、日期(數字)、居住地、電話</p>
+                            </div>
+                            <div class="note">
+                                <i class="fas fa-feather-alt icon font-white"></i>
+                                <p class="font-white">顯示全部 : 顯示全部的聯絡資料</p>
+                            </div>
+                            <div class="note">
+                                <i class="fas fa-feather-alt icon font-white"></i>
+                                <p class="font-white">檢視完整資訊 : </p>
+                            </div>
+                            <div class="point-area">
+                                <div class="point">
+                                    <p class="font-white">1.&nbsp;查看個人完整的聯絡資訊。</p>
+                                </div>
+                                <div class="point">
+                                    <p class="font-white">2.&nbsp;可以查看個人全部的問事記錄。</p>
+                                    
+                                </div>
+                                <div class="ponit">
+                                    <p class="font-white">3.&nbsp;可以更新姓名、聯絡電話、居住地、備註。</p>
+                                </div>
+                                <div class="ponit">
+                                    <p class="font-white">3.&nbsp;也可以刪除此人的聯絡資訊。<span class="font-importent">(問事資料也會一併刪除，等同於刪除帳號)</span></p>
+                                </div>
+                            </div>
+                            <div class="note">
+                                <i class="fas fa-feather-alt icon font-white"></i>
+                                <p class="font-white">刪除 : 等同於檢視完整資訊中的刪除</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+
+            <!-- Histories -->
+            <div class="tab-pane fade" id="fun-histories">
+                 <!-- 主圖 -->
+                 <div class="main-picture">
+                    <div class="container"><img src="img/histories/main.PNG" alt="picture"></div>
+                </div>
+
+                 <!-- 查詢指定對象的紀錄 -->
+                 <div class="section">
+                    <h3 class="section-title font-white"><i class="fas fa-book-open icon font-white"></i>查詢指定對象的紀錄</h3>
+
+                    <div class="row section-content">
+                        <div class="col-sm-6 picture"><img src="img/histories/search.PNG" alt="search"
+                                style="max-width:535px;">
+                        </div>
+                        <div class="col-sm-6 text-area">
+                            <div class="note-area">
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">必須輸入完整姓名，才能做查詢</p>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">同名同姓時，需要確認查詢的對象是誰</p>
+                                </div>
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-importent">完整內容 : 可以查看該筆紀錄詳細內容</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- 顯示紀錄的完整內容 -->
+                 <div class="section">
+                    <h3 class="section-title font-white"><i class="fas fa-book-open icon font-white"></i>顯示紀錄的完整內容</h3>
+
+                    <div class="row section-content">
+                        <div class="col-sm-6 picture"><img src="img/histories/completeContent.PNG" alt="completeContent"
+                                style="max-width:535px;">
+                        </div>
+                        <div class="col-sm-6 text-area">
+                            <div class="note-area">
+                                <div class="note">
+                                    <i class="fas fa-feather-alt icon font-white"></i>
+                                    <p class="font-white">查看該筆紀錄詳細內容</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 關於 -->
+            <div class="tab-pane fade" id="fun-abouts">
+                <!-- 主圖 -->
+                <div class="main-picture">
+                   <div class="container"><img src="img/abouts/main.PNG" alt="picture"></div>
+               </div>
+           </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer" class="bg-blue">
+        <div class="copyright">
+            <p>Copyright © 2021 Kamars.HA </p>
+        </div>
+        <div class="social-media">
+            <a href="https://github.com/Kamars1127" target="_blank" class="gitHub"><i
+                    class="fab fa-github icon"></i></a>
+        </div>
+    </div>
+
+    <!-- 返回網頁頂端 -->
+    <div id="go-top">
+        <a href="#">TOP</a>
+    </div>
+</body>
+
+</html>

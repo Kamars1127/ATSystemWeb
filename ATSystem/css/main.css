@@ -1,0 +1,679 @@
+/*------ 背景顏色
+*-『bg-purple-dark』: 暗紫色
+*-『bg-blue』: 藍色
+*-『bg-purple』: 紫色
+*-『bg-red-dark』: 暗紅色
+*------------------------------*/
+/*------ 文字顏色
+*-『text-purple-dark』: 暗紫色
+*------------------------------*/
+body#function-intro {
+  /*------ Header
+    *-『#header #hamburger-menu #function-menu li.item』
+    *-----------------------------------------------------*/
+  /*------ Content
+    *-『#content』
+    *-----------------------------------------------------*/
+  /*------ 各螢幕尺吋對應的畫面
+    *-『min-width: 576px』: 螢幕尺吋>575時
+    *-『min-width: 768px』: 螢幕尺吋>767時
+    -『min-width: 992px』: 螢幕尺吋>991時
+    *-『min-width: 1200px』: 螢幕尺吋>1999時
+    *----------------------------------------*/
+}
+body#function-intro #header #hamburger-menu #function-menu ul {
+  flex-direction: column;
+}
+body#function-intro #header #hamburger-menu #function-menu ul li.item {
+  background-color: #AC7171;
+  padding: 5px 0;
+}
+body#function-intro #header #hamburger-menu #function-menu ul li.item a {
+  display: block;
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+body#function-intro #header #hamburger-menu #function-menu ul li.item:hover {
+  background-color: #47B8E0;
+}
+body#function-intro #header #hamburger-menu #function-menu ul li.item:hover a {
+  color: #323232;
+}
+body#function-intro #content {
+  padding: 0 16px 30px;
+  /*--- 主圖 ---*/
+  /*--- 段落 ---*/
+}
+body#function-intro #content .function-tab {
+  display: none;
+}
+body#function-intro #content .main-picture {
+  padding-top: 30px;
+}
+body#function-intro #content .section {
+  padding-top: 30px;
+}
+body#function-intro #content .section .section-content {
+  padding-top: 24px;
+  padding-left: 12px;
+}
+body#function-intro #content .section .section-content span {
+  font-size: 10px;
+}
+body#function-intro #content .section .section-content .note-area {
+  margin-top: 15px;
+}
+body#function-intro #content .section .section-content .note-area .note {
+  display: flex;
+  align-items: baseline;
+  padding-top: 15px;
+}
+body#function-intro #content .section .section-content .note-area .note:first-child {
+  padding: 0;
+}
+body#function-intro #content .section .section-content .note-area .note .icon,
+body#function-intro #content .section .section-content .note-area .note p {
+  font-size: 13px;
+}
+body#function-intro #content .section .section-content .point-area {
+  margin-top: 7.5px;
+  margin-left: 32px;
+}
+body#function-intro #content .section .section-content .point-area .point {
+  padding-bottom: 5px;
+}
+body#function-intro #content .section .section-content .point-area .point:last-child {
+  padding: 0;
+}
+body#function-intro #content .section .section-content .point-area p {
+  font-size: 12px;
+}
+@media (min-width: 576px) {
+  body#function-intro #header #hamburger-menu #function-menu ul li.item {
+    padding: 10px 0;
+  }
+  body#function-intro #header #hamburger-menu #function-menu ul li.item a {
+    font-size: 18px;
+  }
+  body#function-intro #content .section .section-content span {
+    font-size: 12px;
+  }
+  body#function-intro #content .section .section-content .note-area {
+    margin: 0;
+  }
+  body#function-intro #content .section .section-content .note-area .note .icon,
+  body#function-intro #content .section .section-content .note-area .note p {
+    font-size: 16px;
+  }
+  body#function-intro #content .section .section-content .point-area p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  body#function-intro #content .section .section-content span {
+    font-size: 14px;
+  }
+  body#function-intro #content .section .section-content .note-area .note .icon,
+  body#function-intro #content .section .section-content .note-area .note p {
+    font-size: 18px;
+  }
+  body#function-intro #content .section .section-content .point-area p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  body#function-intro #header #hamburger-menu #function-menu {
+    display: none;
+  }
+  body#function-intro #content .function-tab {
+    display: flex;
+  }
+  body#function-intro #content .function-tab {
+    display: flex;
+  }
+  body#function-intro #content .function-tab a {
+    flex-grow: 1;
+    padding: 10px 0;
+    background-color: #AC7171;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  body#function-intro #content .function-tab a:hover {
+    background-color: #47B8E0;
+    color: #323232;
+  }
+}
+@media (min-width: 1200px) {
+  body#function-intro #content {
+    padding: 0 30px 60px;
+  }
+  body#function-intro #content .main-picture {
+    padding-top: 60px;
+  }
+  body#function-intro #content .section {
+    padding-top: 60px;
+  }
+  body#function-intro #content .section .section-content {
+    padding-top: 48px;
+    padding-left: 22px;
+  }
+  body#function-intro #content .section .section-content span {
+    font-size: 16px;
+  }
+  body#function-intro #content .section .section-content .note-area .note {
+    padding-top: 30px;
+  }
+  body#function-intro #content .section .section-content .note-area .note .icon,
+  body#function-intro #content .section .section-content .note-area .note p {
+    font-size: 24px;
+  }
+  body#function-intro #content .section .section-content .point-area {
+    margin-top: 15px;
+    margin-left: 59px;
+  }
+  body#function-intro #content .section .section-content .point-area .point {
+    padding-bottom: 10px;
+  }
+  body#function-intro #content .section .section-content .point-area p {
+    font-size: 18px;
+  }
+}
+body#download-page {
+  /*------ 各螢幕尺吋對應的畫面
+    *-『min-width: 576px』: 螢幕尺吋>575時
+    *-『min-width: 768px』: 螢幕尺吋>767時
+    *-『min-width: 992px』: 螢幕尺吋>991時
+    *-『min-width: 1200px』: 螢幕尺吋>1999時
+    *----------------------------------------*/
+}
+body#download-page #content {
+  padding: 50px 0;
+}
+body#download-page #content .main-picture {
+  padding-left: 36px;
+}
+body#download-page #content .right-area {
+  padding-right: 36px;
+}
+body#download-page #content .intro-area {
+  padding-top: 30px;
+}
+body#download-page #content .intro-area p {
+  padding-bottom: 10px;
+}
+body#download-page #content .intro-area p:last-child {
+  padding-bottom: 22px;
+}
+body#download-page #content .download-area {
+  text-align: right;
+}
+body#download-page #content .download-area a {
+  border-radius: 75px;
+  padding: 12px 44px;
+  background: linear-gradient(110deg, #66A6FF, #89F7FE);
+  color: #34314C;
+  text-decoration: none;
+}
+body#download-page #content .download-area a:hover {
+  background: linear-gradient(110deg, #FF6261, #FEC1C1);
+  color: white;
+}
+@media (min-width: 576px) {
+  body#download-page #content .intro-area p {
+    font-size: 18px;
+  }
+  body#download-page #content .download-area a {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  body#download-page #content {
+    padding: 100px 0;
+  }
+  body#download-page #content .intro-area p {
+    padding-bottom: 20px;
+    font-size: 24px;
+  }
+  body#download-page #content .intro-area p:last-child {
+    padding-bottom: 45px;
+  }
+  body#download-page #content .download-area a {
+    padding: 24px 88px;
+    font-size: 48px;
+  }
+}
+* {
+  font-family: "Noto Sans TC";
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+h1 {
+  margin: 0;
+  font-size: 20px;
+}
+h3 {
+  margin: 0;
+  font-size: 15px;
+}
+p {
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+/*------ Color
+*-『.bg-darkPurple』: 暗紫色-背景
+*-『.bg-blue』: 藍色-背景
+*-『.bg-purple』: 紫色-背景
+*-『.font-white』: 白色 - 文字
+*---------------------------------------*/
+.bg-darkPurple {
+  background-color: #34314C;
+}
+.bg-blue {
+  background-color: #47B8E0;
+}
+.bg-purple {
+  background: #5B608D;
+}
+.font-white {
+  color: white;
+}
+.font-black {
+  color: #323232;
+}
+.font-importent {
+  color: #FF7473;
+}
+.icon {
+  margin-right: 10px;
+}
+/*------ Hamburger Menu
+*-『#menu-toggle』
+*---------------------------------------*/
+#menu-toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+#menu-toggle span {
+  display: block;
+  border-radius: 3px;
+  background: white;
+}
+#menu-toggle #hamburger {
+  width: 100%;
+  height: 100%;
+}
+#menu-toggle #hamburger span {
+  width: 30px;
+  height: 3px;
+  margin: 6px 0;
+}
+#menu-toggle #hamburger span:first-child {
+  margin-top: 0;
+}
+/*------ Header
+*-『#header』
+*---------------------------------------*/
+#header #hamburger-menu {
+  margin-top: 11px;
+  background-color: #FFC952;
+}
+#header #hamburger-menu ul {
+  margin: 0;
+}
+#header #hamburger-menu li.nav-item a.nav-link {
+  color: #34314C;
+  text-align: center;
+}
+#header #hamburger-menu li.nav-item:hover {
+  background-color: #FF7473;
+}
+#header #hamburger-menu li.nav-item:hover .nav-link {
+  color: white;
+}
+/*------ Content
+*-『#banne』: Banner
+*-『#content .feature』
+*--------------------------*/
+#banner,
+#content .feature {
+  padding: 30px 16px;
+}
+#banner li {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+}
+#banner li .icon {
+  font-size: 16px;
+}
+#banner li .note {
+  font-size: 16px;
+}
+#banner .download-area {
+  margin-top: 24px;
+  margin-left: auto;
+  border-radius: 75px;
+  padding: 8px;
+  width: 190px;
+  background: linear-gradient(110deg, #66A6FF, #89F7FE);
+  text-align: center;
+}
+#banner .download-area a.download {
+  text-decoration: none;
+  color: #34314C;
+  line-height: 1;
+}
+#banner .download-area a.download span {
+  font-size: 12px;
+}
+#banner .download-area:hover {
+  background: linear-gradient(110deg, #FF6261, #FEC1C1);
+}
+#banner .download-area:hover a.download {
+  color: white;
+}
+#content .feature {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#content .feature .text-area {
+  margin-top: 30px;
+}
+#content .feature ul li {
+  display: flex;
+  align-items: baseline;
+}
+#content .feature ul li .icon {
+  font-size: 13px;
+}
+#content .feature ul.note-area li {
+  margin-top: 15px;
+  margin-left: 6px;
+  font-size: 13px;
+}
+#content .feature ul.point-area {
+  margin-top: 3px;
+  margin-left: 32px;
+}
+#content .feature ul.point-area li {
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+#content .feature ul.point-area li.importent-point span {
+  margin-left: 5px;
+  font-size: 10px;
+}
+/*------ Footer
+*-『#footer』
+*--------------------------*/
+#footer {
+  padding: 20px 16px 15px;
+  text-align: center;
+  color: #323232;
+  font-size: 12px;
+}
+#footer .gitHub {
+  text-decoration: none;
+  color: #323232;
+  font-size: 20px;
+}
+#footer .gitHub .icon {
+  margin: 0;
+}
+/*------ 返回頂端
+*-『#go-top』
+*--------------------------*/
+#go-top {
+  display: none;
+}
+#go-top.visible {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 70px;
+  border-radius: 5px 0 0 5px;
+  background: #FFC952;
+  padding: 6px;
+  font-size: 13px;
+}
+#go-top a {
+  text-decoration: none;
+  color: #34314C;
+}
+/*------ 各螢幕尺吋對應的畫面
+*-『min-width: 576px』: 螢幕尺吋>575時
+*-『min-width: 768px』: 螢幕尺吋>767時
+*-『min-width: 992px』: 螢幕尺吋>991時
+*-『min-width: 1200px』: 螢幕尺吋>1999時
+*----------------------------------------*/
+@media (min-width: 576px) {
+  h1 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  /*--- Hamburger Menu ---*/
+  #menu-toggle #hamburger span {
+    height: 4px;
+  }
+  /*--- Header ---*/
+  #header #hamburger-menu li.nav-item {
+    font-size: 20px;
+  }
+  #header #hamburger-menu li.nav-item a.nav-link {
+    padding: 10px 0;
+  }
+  /*--- Content
+    *-『#banne』
+    *-『#content .feature』
+    *-------------------------*/
+  #banner li .icon {
+    font-size: 20px;
+  }
+  #banner li .note {
+    font-size: 20px;
+  }
+  #banner .download-area a.download {
+    font-size: 24px;
+  }
+  #banner .download-area a.download span {
+    font-size: 14px;
+  }
+  #content .feature ul li .icon {
+    font-size: 16px;
+  }
+  #content .feature ul.note-area li {
+    font-size: 16px;
+  }
+  #content .feature ul.point-area li {
+    font-size: 14px;
+  }
+  #content .feature ul.point-area li.importent-point span {
+    font-size: 12px;
+  }
+  /*--- Footer
+    *-『#footer』
+    *----------------------*/
+  #footer {
+    font-size: 14px;
+  }
+  #footer .gitHub {
+    font-size: 24px;
+  }
+  /*--- 返回頂端
+    *-『#go-top』
+    *--------------------------*/
+  #go-top.visible {
+    bottom: 75px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  /*--- Content
+    *-『#banne』
+    *-『#content .feature』
+    *-------------------------*/
+  #banner .download-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 288px;
+  }
+  #banner .download-area a.download {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+  #banner .download-area a.download p.text {
+    margin-right: 15px;
+  }
+  #content .feature ul li .icon {
+    font-size: 18px;
+  }
+  #content .feature ul.note-area li {
+    font-size: 18px;
+  }
+  #content .feature ul.point-area li {
+    font-size: 16px;
+  }
+  #content .feature ul.point-area li.importent-point span {
+    font-size: 14px;
+  }
+  /*--- Footer
+    *-『#footer』
+    *----------------------*/
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+  }
+  #footer .gitHub {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  /*--- Header
+    *-『#header nav』
+    *---------------*/
+  #header nav {
+    flex-direction: column;
+  }
+  #header nav a.navbar-brand {
+    align-self: flex-start;
+  }
+  #header nav #hamburger-menu {
+    align-self: flex-end;
+    border-radius: 30px 0 0 30px;
+  }
+  #header nav #hamburger-menu li.nav-item {
+    padding: 0 15px;
+  }
+  #header nav #hamburger-menu li.nav-item:hover {
+    border-radius: 30px 0 0 30px;
+  }
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  .icon {
+    margin-right: 15px;
+  }
+  /*--- Header
+    *-『#header nav』
+    *---------------*/
+  #header nav {
+    padding: 10px 30px 60px;
+  }
+  /*--- Content
+    *-『#banne』
+    *-『#content .feature』
+    *-------------------------*/
+  #banner,
+  #content .feature {
+    padding: 40px 30px;
+  }
+  #banner li {
+    padding-top: 48px;
+  }
+  #banner li .icon,
+  #banner li .note {
+    font-size: 30px;
+  }
+  #banner .download-area {
+    margin-top: 48px;
+    width: 540px;
+    height: 118px;
+  }
+  #banner .download-area a.download p.text {
+    font-size: 48px;
+  }
+  #banner .download-area a.download span {
+    font-size: 30px;
+  }
+  #content .feature {
+    padding-top: 60px;
+  }
+  #content .feature .text-area {
+    margin: 0;
+  }
+  #content .feature ul li .icon {
+    font-size: 24px;
+  }
+  #content .feature ul.note-area li {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+  #content .feature ul.point-area {
+    margin-top: 10px;
+  }
+  #content .feature ul.point-area li {
+    padding-bottom: 15px;
+    font-size: 18px;
+  }
+  #content .feature ul.point-area li.import-point {
+    font-size: 16px;
+  }
+  #content .feature.use-ATSystem .row {
+    flex-direction: row-reverse;
+  }
+  /*--- Footer
+    *-『#footer』
+    *----------------------*/
+  #footer {
+    padding: 27px 30px 22px;
+    font-size: 18px;
+  }
+  #footer .gitHub {
+    font-size: 45px;
+  }
+  /*--- 返回頂端
+    *-『#go-top』
+    *--------------------------*/
+  #go-top.visible {
+    bottom: 100px;
+    font-size: 24px;
+  }
+}

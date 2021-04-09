@@ -1,0 +1,89 @@
+body#download-page{
+    #content{
+        padding: 50px 0;
+
+
+        .main-picture{
+            padding-left: 36px;
+        }
+
+        .right-area{
+            padding-right: 36px;
+        }
+
+        .intro-area{
+            padding-top: 30px;
+
+            p{
+                padding-bottom: 10px;
+
+                &:last-child{
+                    padding-bottom: 22px;
+                }
+            }
+        }
+
+        .download-area{
+           
+
+            text-align: right;
+
+            a{
+                border-radius: 75px;
+                padding: 12px 44px;
+                background: linear-gradient(110deg, #66A6FF, #89F7FE);
+                color: @text-purple-dark;
+                text-decoration: none;
+
+                &:hover{
+                    background: linear-gradient(110deg, #FF6261, #FEC1C1);
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+    /*------ 各螢幕尺吋對應的畫面
+    *-『min-width: 576px』: 螢幕尺吋>575時
+    *-『min-width: 768px』: 螢幕尺吋>767時
+    *-『min-width: 992px』: 螢幕尺吋>991時
+    *-『min-width: 1200px』: 螢幕尺吋>1999時
+    *----------------------------------------*/
+    @media(min-width: 576px){
+        #content{
+            .intro-area{
+                p{
+                    font-size: 18px;
+                }
+            }
+
+            .download-area a{
+                font-size: 24px;
+            }
+        }
+    }
+
+    @media(min-width: 768px){
+        #content{
+            padding: 100px 0;
+
+            .intro-area{
+                p{
+                    padding-bottom: 20px;
+                    font-size: 24px;
+
+                    &:last-child{
+                        padding-bottom: 45px;
+                    }
+                }
+            }
+
+
+            .download-area a{
+                padding: 24px 88px;
+                font-size: 48px;
+            }
+        }
+    }
+}

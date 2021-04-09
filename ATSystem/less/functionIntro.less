@@ -1,0 +1,225 @@
+body#function-intro {
+
+    /*------ Header
+    *-『#header #hamburger-menu #function-menu li.item』
+    *-----------------------------------------------------*/
+    #header #hamburger-menu #function-menu ul{
+        flex-direction: column;
+
+        li.item{
+            background-color: @bg-red-dark;
+            padding: 5px 0;
+    
+            a{
+                display: block;
+                margin-left: 15px;
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+            }
+    
+            &:hover{
+                background-color: @bg-blue;
+                
+                a{
+                    color: @text;
+                }
+            }
+        }
+    }
+
+    /*------ Content
+    *-『#content』
+    *-----------------------------------------------------*/
+    #content{
+        padding: 0 16px 30px;
+
+        .function-tab{
+            display: none;
+        }
+
+        /*--- 主圖 ---*/
+        .main-picture{
+            padding-top: 30px;
+        }
+
+        /*--- 段落 ---*/
+        .section{
+            padding-top: 30px;
+            .section-content{
+                padding-top: 24px;
+                padding-left: 12px;
+
+                span{
+                    font-size: 10px;
+                }
+
+                .note-area{
+                    margin-top: 15px;
+
+                    .note{
+                        display: flex;
+                        align-items: baseline;
+                        padding-top: 15px;
+
+                        &:first-child{
+                            padding: 0;
+                        }
+
+                        .icon, p{
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                .point-area{
+                    margin-top: 7.5px;
+                    margin-left: 32px;
+
+                    .point{
+                        padding-bottom: 5px;
+
+                        &:last-child{
+                            padding: 0;
+                        }
+                    }
+
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*------ 各螢幕尺吋對應的畫面
+    *-『min-width: 576px』: 螢幕尺吋>575時
+    *-『min-width: 768px』: 螢幕尺吋>767時
+    -『min-width: 992px』: 螢幕尺吋>991時
+    *-『min-width: 1200px』: 螢幕尺吋>1999時
+    *----------------------------------------*/
+
+    @media(min-width: 576px){
+        #header #hamburger-menu #function-menu ul li.item{
+            padding: 10px 0;
+
+            a{
+                font-size: 18px;
+            }
+        }
+
+
+        #content .section .section-content{
+            span{
+                font-size: 12px;
+            }
+
+            .note-area{
+                margin: 0;
+
+                .note{
+                    .icon , p{
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .point-area p{
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media(min-width: 768px){
+        #content .section .section-content{
+            span{
+                font-size: 14px;
+            }
+
+            .note-area .note{
+                .icon, p{
+                    font-size: 18px;
+                }
+            }
+
+            .point-area p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media(min-width: 992px){
+        #header #hamburger-menu #function-menu{
+            display: none;
+        }
+
+        #content{
+
+            .function-tab{
+                display: flex;
+            }
+
+            .function-tab{
+                display: flex;
+    
+                a{
+                    flex-grow: 1;
+                    padding: 10px 0;
+                    background-color: @bg-red-dark;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 24px;
+    
+                    &:hover{
+                        background-color: @bg-blue;
+                        color: @text;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(min-width: 1200px){
+        #content{
+            padding: 0 30px 60px;
+
+            .main-picture{
+                padding-top: 60px;
+            }
+
+            .section{
+                padding-top: 60px;
+                .section-content{
+                    padding-top: 48px;
+                    padding-left: 22px;
+
+                    span{
+                        font-size: 16px;
+                    }
+
+                    .note-area .note{
+                        padding-top: 30px;
+
+                        .icon, p{
+                            font-size: 24px;
+                        }
+                    }
+
+                    .point-area{
+                        margin-top: 15px;
+                        margin-left: 59px;
+
+                        .point{
+                            padding-bottom: 10px;
+                        }
+
+                        p{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATSystem</title>
+
+    <link rel="icon" type="image/ico" sizes="32x32" href="img/favicon-32x32.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/action.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header" class="bg-darkPurple">
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html"><img src="img/LOGO.png" alt="logo"></a>
+
+            <!--Hamburger Menu-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hamburger-menu">
+                <!--Hamburger Menu Icon-->
+                <div id="menu-toggle" class="d-flex align-items-start">
+                    <div id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="hamburger-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="functionIntro.html">功能選單</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">開發日誌</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="download.html">檔案下載</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Content -->
+    <div id="content">
+        <!-- Banner -->
+        <div id="banner" class="bg-darkPurple">
+            <div class="text-area">
+                <h1 class="title font-white">AT問事系統，方便管理問事資料</h1>
+                <ul>
+                    <li>
+                        <i class="fas fa-feather-alt icon font-white"></i>
+                        <div class="note font-white">操作簡單，一次使用立即上手</div>
+                    </li>
+                    <li>
+                        <i class="fas fa-feather-alt icon font-white"></i>
+                        <div class="note font-white">功能齊全，使用超方便</div>
+                    </li>
+                    <li>
+                        <i class="fas fa-feather-alt icon font-white"></i>
+                        <div class="note font-white">匯出PDF檔，列印超省事</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="download-area">
+                <a href="source/ATSystem.rar" class="download" download="ATSystem.rar">
+                    <p class="text">檔案下載</p>
+                    <span>版本: 1.0 2021/03/27</span>
+                </a>
+            </div>
+        </div>
+        <!-- 以往問事方式 -->
+        <div class="older-asked-method feature bg-blue">
+            <div class="row">
+                <div class="col-lg-5 "><img src="img/home-pic.png" alt="picture"></div>
+                <div class="col-lg-7 text-area">
+                    <h3 class="title"><i class="fas fa-book-open font-black icon"></i>以往問事方式</h3>
+                    <ul class="note-area">
+                        <li>
+                            <i class="fas fa-feather-alt icon font-black"></i>
+                            <p class="font-black">以微軟旗下辦公軟體中的 word，作為紀錄工具。</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-feather-alt icon font-black"></i>
+                            <p class="font-black">缺點 :</p>
+                        </li>
+                    </ul>
+                    <ul class="point-area">
+                        <li class="font-black"><p>1.&nbsp;</p><p>微軟office辦公軟體需額外費用。</p></li>
+                        <li class="font-black"><p>2.&nbsp;</p><p>問事資料與聯絡資訊皆在同一個word檔上。</p></li>
+                        <li class="font-black"><p>3.&nbsp;</p><p>找出問事人以往問事資料或聯絡資訊不易。</p></li>
+                        <li class="font-black"><p>4.&nbsp;</p><p>刪除檔案，聯絡資料也會一並刪除。</p></li>
+                        <li class="font-black"><p>5.&nbsp;</p><p>列印報名表，必須摳檔到其他電腦上列印，不當操作可能會遺失該檔案，或修改到檔案內容。</p></li>
+                        <li class="font-black"><p>6.&nbsp;</p><p>匯出PDF檔來列印時，容易造成電腦有太多不必要的檔案。</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- AT問事系統 -->
+        <div class="use-ATSystem feature bg-darkPurple">
+            <div class="row">
+                <div class="col-lg-5">
+                    <img src="img/home-pic2.png" alt="picture">
+                </div>
+                <div class="col-lg-7 text-area">
+                    <h3 class="title font-white"><i class="fas fa-book-open icon font-white"></i>AT問事系統</h3>
+                    <ul class="note-area">
+                        <li>
+                            <i class="fas fa-feather-alt icon font-white"></i>
+                            <p class="font-white">方便存取與管理問事資料及問事人的連絡資訊。</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-feather-alt icon font-white"></i>
+                            <p class="font-white">優點 :</p>
+                        </li>
+                    </ul>
+                    <ul class="point-area">
+                        <li class="font-white"><p>1.&nbsp;</p><p>實用的功能。</p></li>
+                        <li class="font-white"><p>2.&nbsp;</p><p>能快速找出問事資料或聯絡資訊。</p></li>
+                        <li class="font-white"><p>3.&nbsp;</p><p>安全清除不要的資料或過時的聯絡資訊。</p></li>
+                        <li class="font-white"><p>4.&nbsp;</p><p>問事資料與聯絡資訊是分開的。</p></li>
+                        <li class="font-white"><p>5.&nbsp;</p><p>刪除問事資料不會連同聯絡資訊也一併刪除。</p></li>
+                        <li class="font-importent importent-point"><p>6.&nbsp;</p><p>但刪除聯絡資訊，會連同問事資料也刪除。<span>(類似刪除帳號概念)</span></p></li>
+                        <li class="font-white"><p>7.&nbsp;</p><p>只匯出PDF檔，方便列印，及節省電腦視覺空間。</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div id="footer" class="bg-blue">
+        <div class="copyright">
+            <p>Copyright © 2021  Kamars.HA </p>
+        </div>
+        <div class="social-media">
+            <a href="https://github.com/Kamars1127" target="_blank" class="gitHub"><i class="fab fa-github icon"></i></a>
+        </div>
+    </div>
+
+    <!-- 返回網頁頂端 -->
+    <div id="go-top">
+        <a href="#">TOP</a>
+    </div>
+</body>
+
+</html>
