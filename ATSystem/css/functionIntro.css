@@ -1,8 +1,0 @@
-body#function-intro {
-  /*------ Header
-    *-『#header』
-    *---------------------------------------*/
-}
-body#function-intro #header #hamburger-menu #function-menu li.item a {
-  text-decoration: none;
-}

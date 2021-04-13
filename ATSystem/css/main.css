@@ -246,6 +246,37 @@ body#download-page #content .download-area a:hover {
     font-size: 48px;
   }
 }
+body#development-log-page {
+  /*------ 各螢幕尺吋對應的畫面
+    *-『min-width: 576px』: 螢幕尺吋>575時
+    *-『min-width: 1200px』: 螢幕尺吋>1999時
+    *----------------------------------------*/
+}
+body#development-log-page #content {
+  padding: 30px 16px;
+}
+body#development-log-page #content .icon,
+body#development-log-page #content a.title {
+  font-size: 16px;
+}
+body#development-log-page #content a.title {
+  text-decoration: none;
+}
+body#development-log-page #content a.title:hover {
+  color: #FF7473;
+}
+@media (min-width: 576px) {
+  body#development-log-page #content .icon,
+  body#development-log-page #content a.title {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  body#development-log-page #content .icon,
+  body#development-log-page #content a.title {
+    font-size: 30px;
+  }
+}
 * {
   font-family: "Noto Sans TC";
 }

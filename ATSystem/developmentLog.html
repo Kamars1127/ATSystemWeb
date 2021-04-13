@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATSystem-檔案下載</title>
+    <title>ATSystem-開發日誌</title>
 
     <link rel="icon" type="image/ico" sizes="32x32" href="img//favicon-32x32.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -17,7 +17,7 @@
     <script src="js/action.js"></script>
 </head>
 
-<body id="download-page" class="bg-purple">
+<body id="development-log-page" class="bg-purple">
     <!-- Header -->
     <div id="header" class="bg-darkPurple">
         <!--Navigation Bar-->
@@ -45,10 +45,10 @@
                         <a class="nav-link" href="functionIntro.html">功能選單</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="developmentLog.html">開發日誌</a>
+                        <a class="nav-link" href="#">開發日誌</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">檔案下載</a>
+                        <a class="nav-link" href="download.html">檔案下載</a>
                     </li>
                 </ul>
             </div>
@@ -58,19 +58,13 @@
    <!-- Content -->
     <div id="content">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 main-picture"><img src="img/download.png" alt="logo" style="max-width:525px;"></div>
-                <div class="col-lg-6 right-area">
-                    <div class="intro-area">
-                        <p class="font-white">檔名 : AT問事系統</p>
-                        <p class="font-white">最新版本 : 1.02</p>
-                        <p class="font-white">最終更新日 : 2021/04/13</p>
-                        <p class="font-white">檔案大小 : 4,015KB</p>
-                    </div>
-                    <div class="download-area">
-                        <a href="source/ATSystem_ver.1.02.rar" download="ATSystem">下載</a>
-                    </div>
-                </div>
+            <div class="log">
+                <i class="fas fa-book icon font-white"></i>
+                <a href="dev-log/dev-environment.html" class="title font-white" target="_blank">開發環境</a>
+            </div>
+            <div class="log">
+                <i class="fas fa-book icon font-white"></i>
+                <a href="dev-log/form-mobile-function.html" class="title font-white" target="_blank">視窗移動功能</a>
             </div>
         </div>
     </div>
@@ -84,6 +78,11 @@
             <a href="https://github.com/Kamars1127" target="_blank" class="gitHub"><i
                     class="fab fa-github icon"></i></a>
         </div>
+    </div>
+
+    <!-- 返回網頁頂端 -->
+    <div id="go-top">
+        <a href="#">TOP</a>
     </div>
 </body>
 

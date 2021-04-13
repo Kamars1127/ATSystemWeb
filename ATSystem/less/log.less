@@ -1,0 +1,195 @@
+@import "basic.less";
+
+*{
+    //color: white;
+}
+
+body{
+    background-color: #464646;
+}
+
+h1{
+    margin: 0;
+    color: white;
+    font-size: 60px;
+}
+
+h3{
+    margin: 0;
+    color: @text-blue;
+    font-size: 30px;
+}
+
+h4{
+    margin: 0;
+    color: @text-orange;
+    font-size: 24px;
+}
+
+h5{
+    margin: 0;
+    color: white;
+    font-size: 20px;
+}
+
+.importent-text{
+    color: @importent-color;
+}
+
+.big-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+
+    .icon{
+        margin-right: 30px;
+        color: white;
+        font-size: 60px;
+    }
+}
+
+#content{
+    padding: 0 16px 0 81px;
+}
+
+.content{
+    padding-top: 60px;
+
+    .title{
+        display: flex;
+        align-items: center;
+
+        .icon{
+            margin-right: 15px;
+            color: @text-blue;
+            font-size: 30px;
+        }
+    }
+
+    .note-area{
+        margin-top: 20px;
+        margin-left: 68px;
+
+        .note{
+            padding-top: 25px;
+
+            &:first-child{
+                padding: 0;
+            }
+        }
+
+        .point-area{
+            margin-top: 10px;
+            margin-left: 26px;
+
+            .point{
+                padding-top: 20px;
+
+                &:first-child{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+/*--- 參考文獻 ---*/
+.literature{
+    padding: 60px 0;
+
+    .title{
+        display: flex;
+        align-items: center;
+
+        h3{
+            color: white;
+        }
+
+        .icon{
+            margin-right: 15px;
+            color: white;
+            font-size: 30px;
+        }
+    }
+
+    .item-area{
+        margin-top: 20px;
+        margin-left: 68px;
+
+        .item{
+            display: flex;
+            align-items: center;
+            padding-top: 25px;
+            font-size: 24px;
+
+            h4{
+                color: white;
+            }
+
+            a{
+                padding-left: 2px;
+                color: white;
+                text-decoration: none;
+
+                &:hover{
+                    color: @importent-color;
+                }
+            }
+
+            &:first-child{
+                padding: 0;
+            }
+        }
+    }
+}
+
+/*------ Footer
+*-----------------*/
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px 45px;
+    background-color: #5B608D;
+
+    .copyright{
+        font-size: 18px;
+        color: white;
+
+        p{
+            margin: 0;
+        }
+    }
+
+    a.gitHub{
+        text-decoration: none;
+
+        .icon{
+            color: white;
+            font-size: 45px;
+        }
+    }
+}
+
+/*------ 返回網頁頂端
+*------------------------*/
+#go-top{
+    display: none;
+
+    &.visible{
+        display: block;
+        position: fixed;
+        right: 0;
+        bottom: 70px;
+        border-radius: 5px 0 0 5px;
+        background: #FFC952;
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    a {
+        text-decoration: none;
+        color: @text-purple-dark;
+    }
+}

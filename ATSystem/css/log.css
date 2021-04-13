@@ -1,0 +1,163 @@
+/*------ 背景顏色
+*-『bg-purple-dark』: 暗紫色
+*-『bg-blue』: 藍色
+*-『bg-purple』: 紫色
+*-『bg-red-dark』: 暗紅色
+*------------------------------*/
+/*------ 文字顏色
+*-『text-purple-dark』: 暗紫色
+*------------------------------*/
+body {
+  background-color: #464646;
+}
+h1 {
+  margin: 0;
+  color: white;
+  font-size: 60px;
+}
+h3 {
+  margin: 0;
+  color: #92C1FF;
+  font-size: 30px;
+}
+h4 {
+  margin: 0;
+  color: #FFC268;
+  font-size: 24px;
+}
+h5 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+.importent-text {
+  color: #FF7473;
+}
+.big-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+.big-title .icon {
+  margin-right: 30px;
+  color: white;
+  font-size: 60px;
+}
+#content {
+  padding: 0 16px 0 81px;
+}
+.content {
+  padding-top: 60px;
+}
+.content .title {
+  display: flex;
+  align-items: center;
+}
+.content .title .icon {
+  margin-right: 15px;
+  color: #92C1FF;
+  font-size: 30px;
+}
+.content .note-area {
+  margin-top: 20px;
+  margin-left: 68px;
+}
+.content .note-area .note {
+  padding-top: 25px;
+}
+.content .note-area .note:first-child {
+  padding: 0;
+}
+.content .note-area .point-area {
+  margin-top: 10px;
+  margin-left: 26px;
+}
+.content .note-area .point-area .point {
+  padding-top: 20px;
+}
+.content .note-area .point-area .point:first-child {
+  padding: 0;
+}
+/*--- 參考文獻 ---*/
+.literature {
+  padding: 60px 0;
+}
+.literature .title {
+  display: flex;
+  align-items: center;
+}
+.literature .title h3 {
+  color: white;
+}
+.literature .title .icon {
+  margin-right: 15px;
+  color: white;
+  font-size: 30px;
+}
+.literature .item-area {
+  margin-top: 20px;
+  margin-left: 68px;
+}
+.literature .item-area .item {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  font-size: 24px;
+}
+.literature .item-area .item h4 {
+  color: white;
+}
+.literature .item-area .item a {
+  padding-left: 2px;
+  color: white;
+  text-decoration: none;
+}
+.literature .item-area .item a:hover {
+  color: #FF7473;
+}
+.literature .item-area .item:first-child {
+  padding: 0;
+}
+/*------ Footer
+*-----------------*/
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px 45px;
+  background-color: #5B608D;
+}
+#footer .copyright {
+  font-size: 18px;
+  color: white;
+}
+#footer .copyright p {
+  margin: 0;
+}
+#footer a.gitHub {
+  text-decoration: none;
+}
+#footer a.gitHub .icon {
+  color: white;
+  font-size: 45px;
+}
+/*------ 返回網頁頂端
+*------------------------*/
+#go-top {
+  display: none;
+}
+#go-top.visible {
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 70px;
+  border-radius: 5px 0 0 5px;
+  background: #FFC952;
+  padding: 6px;
+  font-size: 13px;
+}
+#go-top a {
+  text-decoration: none;
+  color: #34314C;
+}

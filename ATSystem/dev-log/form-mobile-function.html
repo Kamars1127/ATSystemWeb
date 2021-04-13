@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>視窗移動功能</title>
+
+    <link rel="icon" type="image/ico" sizes="32x32" href="../img/favicon-32x32.ico">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/log.css">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/action.js"></script>
+</head>
+<body>
+    <div id="content">
+        <div class="big-title">
+            <i class="fas fa-book icon"></i>
+            <h1>視窗移動功能</h1>
+        </div>
+    
+        <div class="content">
+            <div class="title">
+                <i class="fas fa-pencil-alt icon"></i>
+                <h3>前言</h3>
+            </div>
+            <div class="text-area">
+                <p>&nbsp; &nbsp; 因為設計上，把Form的FormBorderStyle設為none，而沒有框線和標題列，</p>
+                <p>導致視窗無法被拖移，所以要另外做一個標題列來做拖移使用。</p>
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="title">
+                <i class="fas fa-pencil-alt icon"></i>
+                <h3>程式碼 :</h3>
+            </div>
+            <div class="picture">
+                <img src="../img/log/formMobile/code.PNG" alt="code">
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="title">
+                <i class="fas fa-pencil-alt icon"></i>
+                <h3>user32.dll :</h3>
+            </div>
+            <div class="note-area">
+                <div class="note">
+                    <h4>1.&nbsp;動態連結程式庫</h4>
+                </div>
+                <div class="point-area">
+                    <div class="point">
+                        <h5>(1)&nbsp;dynamic-link library 的縮寫</h5>
+                    </div>
+                    <div class="point">
+                        <h5>(2)&nbsp;是在Microsoft Windows中實現共享函式庫概念的一種實作方式</h5>
+                    </div>
+                </div>
+                <div class="note">
+                    <h4>2.&nbsp;是Windows使用者介面相關應用程式接口</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                <i class="fas fa-pencil-alt icon"></i>
+                <h3>ReleaseCapture函式 :</h3>
+            </div>
+            <div class="note-area">
+                <div class="note">
+                    <h4>1.&nbsp;功能 :</h4>
+                </div>
+                <div class="point-area">
+                    <div class="point">
+                        <h5>(1)&nbsp;釋放滑鼠捕捉</h5>
+                    </div>
+                    <div class="point">
+                        <h5>(2)&nbsp;否則，無法移動視窗</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 參考文獻 -->
+        <div class="literature">
+            <div class="title">
+                <i class="fas fa-passport icon"></i>
+                <h3>參考文獻</h3>
+            </div>
+            <div class="item-area">
+                <div class="item">
+                    <h4>1.&nbsp;</h4>
+                    <a href="https://www.cnblogs.com/cncc/p/8005667.html">視窗移動</a>
+                </div>
+                <div class="item">
+                    <h4>2.&nbsp;</h4>
+                    <a href="">FontAwesome.Sharp</a>
+                </div>
+                <div class="item">
+                    <h4>3.&nbsp;</h4>
+                    <a href="https://www.itsfun.com.tw/user32.dll/wiki-2180607-8843486">user32.dll</a>
+                </div>
+                <div class="item">
+                    <h4>4.&nbsp;</h4>
+                    <a href="">iTextSharp</a>
+                </div>
+                <div class="item">
+                    <h4>5.&nbsp;</h4>
+                    <a href="">Export DataGridView Data To PDF In C#</a>
+                </div>
+                <div class="item">
+                    <h4>6.&nbsp;</h4>
+                    <a href="">C# winform 製作安裝檔</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer-->
+    <div id="footer">
+        <div class="copyright">
+            <p>Copyright © 2021  Kamars.HA </p>
+        </div>
+        <div class="social-media">
+            <a href="https://github.com/Kamars1127" target="_blank" class="gitHub"><i class="fab fa-github icon"></i></a>
+        </div>
+    </div>
+
+    <!-- 返回網頁頂端 -->
+    <div id="go-top">
+        <a href="#">TOP</a>
+    </div>
+</body>
+</html>
