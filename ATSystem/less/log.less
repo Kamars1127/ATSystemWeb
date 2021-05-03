@@ -32,6 +32,12 @@ h5{
     font-size: 20px;
 }
 
+pre{
+    margin: 0;
+    line-height: 0;
+    overflow: unset;
+}
+
 .importent-text{
     color: @importent-color;
 }
@@ -50,11 +56,11 @@ h5{
 }
 
 #content{
-    padding: 0 16px 0 81px;
+    padding: 0 16px 0 80px;
 }
 
 .content{
-    padding-top: 60px;
+    padding-top: 100px;
 
     .title{
         display: flex;
@@ -67,27 +73,54 @@ h5{
         }
     }
 
+    .text-area{
+        margin-top: 20px;
+        margin-left: 68px;
+        color: white;
+        line-height: 1;
+
+        p{
+            margin: 0;
+            font-size: 24px;
+        }
+    }
+
+    .picture{
+        margin-top: 20px;
+        margin-left: 68px;
+    }
+
     .note-area{
         margin-top: 20px;
         margin-left: 68px;
 
         .note{
-            padding-top: 25px;
+            padding-top: 50px;
 
             &:first-child{
                 padding: 0;
             }
+
+            span{
+                color: @importent-color;
+                font-size: 20px;
+            }
         }
 
         .point-area{
-            margin-top: 10px;
-            margin-left: 26px;
+            margin-top: 20px;
+            margin-left: 35px;
 
             .point{
-                padding-top: 20px;
+                padding-top: 25px;
 
                 &:first-child{
                     padding: 0;
+                }
+
+                span{
+                    color: @importent-color;
+                    font-size: 15px;
                 }
             }
         }
@@ -96,7 +129,7 @@ h5{
 
 /*--- 參考文獻 ---*/
 .literature{
-    padding: 60px 0;
+    padding: 100px 0;
 
     .title{
         display: flex;
@@ -120,11 +153,12 @@ h5{
         .item{
             display: flex;
             align-items: center;
-            padding-top: 25px;
-            font-size: 24px;
+            padding-top: 30px;
+            font-size: 20px;
 
             h4{
                 color: white;
+                font-size: 20px;
             }
 
             a{
