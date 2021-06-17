@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>視窗移動功能</title>
+
+    <link rel="icon" type="image/ico" sizes="32x32" href="../img/favicon-32x32.ico">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/log.css">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/action.js"></script>
+</head>
+
+<body>
+    <!-- 大標題 -->
+    <div id="content">
+        <div class="big-title">
+            <i class="fas fa-book-reader icon"></i>
+            <h1>視窗移動功能</h1>
+        </div>
+
+        <!-- 前言 -->
+        <div class="content">
+            <div class="title">
+                <i class="fas fa-pencil-alt icon"></i>
+                <h3>前言</h3>
+            </div>
+            <pre class="text-area">
+                <p>    因為設計上，把Form的FormBorderStyle設為none，而沒有框線和標題列，</p>
+                <p>導致視窗無法被拖移，所以要另外做一個標題列來做拖移使用。</p>
+            </pre>
+        </div>
+
+        <!-- 程式碼 -->
+        <div class="content">
+            <div class="title">
+                <i class="fas fa-pencil-alt icon"></i>
+                <h3>程式碼 :</h3>
+            </div>
+            <div class="picture">
+                <img src="../img/log/formMobile/code.PNG" alt="code">
+            </div>
+            <div class="picture">
+                <img src="../img/log/formMobile/code.PNG" alt="code">
+            </div>
+        </div>
+
+        <!-- user32.dll -->
+        <div class="content">
+            <div class="title">
+                <i class="fas fa-pencil-alt icon"></i>
+                <h3>user32.dll :</h3>
+            </div>
+            <div class="note-area">
+                <pre class="note">
+                    <h4>1. 為一種Win32 dll檔</h4>
+                </pre>
+
+                <pre class="note">
+                    <h4>2. 動態連結程式庫</h4>
+                </pre>
+                <div class="point-area">
+                    <pre class="point">
+                        <h5>(1) dynamic-link library 的縮寫</h5>
+                    </pre>
+                    <pre class="point">
+                        <h5>(2) 是在Windows中實現"共享函式庫概念"的一種實作方式</h5>
+                    </pre>
+                </div>
+                <pre class="note">
+                    <h4>3. 是Windows使用者API客戶端</h4>
+                </pre>
+                <div class="point-area">
+                    <pre class="point">
+                        <h5>(1) 建立視窗</h5>
+                    </pre>
+                    <pre class="point">
+                        <h5>(2) 傳送訊息</h5>
+                    </pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dllimport -->
+        <div class="content">
+            <div class="title">
+                <i class="fas fa-pencil-alt icon"></i>
+                <h3>Dllimport :</h3>
+            </div>
+            <div class="note-area">
+                <pre class="note">
+                    <h4>1. 提供從不受管理DLL匯出的函式所需資訊。</h4>
+                </pre>
+                <pre class="note">
+                    <h4>2. 必須提供包含進入點之 DLL 的名稱。 <span>(這是最基本要求)</span></h4>
+                </pre>
+            </div>
+        </div>
+
+        <!-- ReleaseCapture函式 -->
+        <div class="content">
+            <div class="title">
+                <i class="fas fa-pencil-alt icon"></i>
+                <h3>ReleaseCapture函式 :</h3>
+            </div>
+            <div class="note-area">
+                <pre class="note">
+                    <h4>1. 為user32.dll檔中的函式</span></h4>
+                </pre>
+                <pre class="note">
+                    <h4>2. 釋放滑鼠捕捉。 <span>(否則，無法移動視窗)</span></h4>
+                </pre>
+            </div>
+        </div>
+
+        <!-- SendMessage函式 -->
+        <div class="content">
+            <div class="title">
+                <i class="fas fa-pencil-alt icon"></i>
+                <h3>SendMessage函式 :</h3>
+            </div>
+            <div class="note-area">
+                <pre class="note">
+                    <h4>1. 為 user32.dll檔中的函式</h4>
+                </pre>
+                <pre class="note">
+                    <h4>2. 將指定的訊息發送給一個或多個視窗</h4>
+                </pre>
+                <pre class="note">
+                    <h4>3. 參數說明 :</h4>
+                </pre>
+                <div class="point-area">
+                    <pre class="point">
+                        <h5>(1) hWnd : 接受訊息的視窗。</h5>
+                    </pre>
+                    <pre class="point">
+                        <h5>(2) wMsg : 要傳送的訊息。</h5>
+                    </pre>
+                    <pre class="point">
+                        <h5>(3) wParam : 其他訊息。</h5>
+                    </pre>
+                    <pre class="point">
+                        <h5>(4) lParam : 其他訊息。</h5>
+                    </pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- 參考文獻 -->
+        <div class="literature">
+            <div class="title">
+                <i class="fas fa-passport icon"></i>
+                <h3>參考文獻</h3>
+            </div>
+            <div class="item-area">
+                <pre class="item">
+                    <h4>1. </h4>
+                    <a href="https://www.cnblogs.com/cncc/p/8005667.html" target="_blank">視窗移動</a>
+                </pre>
+                <pre class="item">
+                    <h4>2. </h4>
+                    <a href="https://www.itsfun.com.tw/user32.dll/wiki-2180607-8843486" target="_blank">user32.dll (1)</a>
+                </pre>
+                <pre class="item">
+                    <h4>3. </h4>
+                    <a href="https://www.exefiles.com/zh-tw/dll/user32-dll/" target="_blank">user32.dll (2)</a>
+                </pre>
+                <pre class="item">
+                    <h4>4. </h4>
+                    <a href="https://docs.microsoft.com/zh-tw/dotnet/api/system.runtime.interopservices.dllimportattribute?view=net-5.0" target="_blank">Dllimport (1)</a>
+                </pre>
+                <pre class="item">
+                    <h4>5. </h4>
+                    <a href="https://www.cnblogs.com/szytwo/archive/2011/12/11/2283780.html" target="_blank">Dllimport (2)</a>
+                </pre>
+                <div class="item">
+                    <h4>6. </h4>
+                    <a href="https://docs.microsoft.com/zh-tw/dotnet/api/system.runtime.interopservices.dllimportattribute?view=net-5.0"
+                        target="_blank">ReleaseCapture</a>
+                </div>
+                <pre class="item">
+                    <h4>7. </h4>
+                    <a href="https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-sendmessage" target="_blank">SendMessage(1)</a>
+                </pre>
+                <pre class="item">
+                    <h4>8. </h4>
+                    <a href="https://blog.csdn.net/u013964761/article/details/81567834?utm_medium=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-8.nonecase&depth_1-utm_source=distribute.pc_relevant_bbs_down.none-task--2~all~first_rank_v2~rank_v29-8.nonecase" target="_blank">SendMessage(2)</a>
+                </pre>
+                <pre class="item">
+                    <h4>9. </h4>
+                    <a href="https://docs.microsoft.com/en-us/windows/win32/menurc/wm-syscommand" target="_blank">SendMessage(3)</a>
+                </pre>
+                <pre class="item">
+                    <h4>10. </h4>
+                    <a href="https://blog.csdn.net/greless/article/details/56017766?ops_request_misc=&request_id=&biz_id=102&utm_term=wm_syscommand%200xf012&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-56017766.pc_search_result_before_js&spm=1018.2226.3001.4187" target="_blank">SendMessage(4)</a>
+                </pre>
+                <pre class="item">
+                    <h4>9. </h4>
+                    <a href="" target="_blank"></a>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+        <div class="copyright">
+
+</html>
